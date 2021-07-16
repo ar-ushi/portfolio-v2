@@ -1,7 +1,9 @@
 import React from "react"
+import Layout from '../components/Layout'
 
 export default function Home() {
   return (
+    <Layout>
     <section>
         <div>
           <h2>Arushi</h2>
@@ -9,5 +11,6 @@ export default function Home() {
           <p>FUCK DSA</p>
         </div>
     </section>
+    </Layout>
   )
 }
