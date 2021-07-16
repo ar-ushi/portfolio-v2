@@ -1,6 +1,7 @@
 import React from 'react';
 
-const IconCodepen = () => (
+export default function IconCodepen(){
+  return (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     role="img"
@@ -18,6 +19,5 @@ const IconCodepen = () => (
     <polyline points="2 15.5 12 8.5 22 15.5"></polyline>
     <line x1="12" y1="2" x2="12" y2="8.5"></line>
   </svg>
-);
-
-export default IconCodepen;
+  );
+}
