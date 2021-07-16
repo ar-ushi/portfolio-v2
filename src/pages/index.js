@@ -1,5 +1,10 @@
 import React from "react"
 import Layout from '../components/Layout'
+import styled from 'styled-components'
+
+const StyledMainContainer = styled.main`
+  counter-reset: section;
+`
 
 export default function Home() {
   return (
@@ -8,7 +13,6 @@ export default function Home() {
         <div>
           <h2>Arushi</h2>
           <h3>UX Developer</h3>
-          <p>FUCK DSA</p>
         </div>
     </section>
     </Layout>
