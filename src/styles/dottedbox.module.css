@@ -1,0 +1,7 @@
+.stripe{
+    width: 50%;
+    height: 50%;
+    background-image: repeating-radial-gradient(center center, rgba(240, 234, 234, 0.4), rgba(247, 241, 241, 0.4) 1px, transparent 1px, transparent 100%);
+    background-image: -webkit-repeating-radial-gradient(center center, #F93C1C, #F93C1C 1px, transparent 1px, transparent 100%);
+    background-image: -moz-repeating-radial-gradient(center center, #F93C1C, #F93C1C 1px, transparent 1px, transparent 100%);
+}

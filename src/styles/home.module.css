@@ -1,6 +1,7 @@
+@import '../styles/variables.css';
 .header {
+    padding-left: 24px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
     grid-gap: 40px;
     align-items: center;
   }
@@ -14,10 +15,19 @@
   }
   .btn {
     display: inline-block;
-    background: #D42990;
+    border: 2px solid var(--primary);
+    color: var(--primary);
     padding: 10px 16px;
-    border-radius: 10px;
     margin-top: 20px;
     font-weight: 500;
   }
+  .btn:hover{
+    background: var(--primary-opaque);
+    box-shadow: var(--button-box-shadow);
+  }
   
+  .name{
+      display: inline-block;
+      color: var(--primary);
+      font-size: 2.5em;
+  }
