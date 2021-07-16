@@ -1,5 +1,13 @@
 import React from "react"
 
 export default function Home() {
-  return <div>Hello world!</div>
+  return (
+    <section>
+        <div>
+          <h2>Arushi</h2>
+          <h3>UX Developer</h3>
+          <p>FUCK DSA</p>
+        </div>
+    </section>
+  )
 }
