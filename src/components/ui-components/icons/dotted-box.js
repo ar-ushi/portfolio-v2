@@ -2,7 +2,7 @@ import React from 'react';
 // This component creates a dotted box based on the params we recieve.
 export default function IconDottedBox() {
     return(
-    <svg width="120px" height="120px" version="1.0" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 1280.000000 1280.000000"
+    <svg width="110px" height="100px" version="1.0" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 1280.000000 1280.000000"
     preserveAspectRatio="xMidYMid meet">
     <g transform="translate(0.000000,1280.000000) scale(0.100000,-0.100000)"
     fill="#111111" stroke="none">

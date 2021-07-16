@@ -1,19 +1,29 @@
 @import '../styles/variables.css';
 .header {
-    padding-left: 24px;
-    display: grid;
+    padding-bottom: none;
+    display: flex;
     position: relative;
-    grid-gap: 40px;
-    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  .header h2 {
-    font-size: 4em;
+  @media (max-width: 480px) and (min-height: 700px) {
+   .header{
+    padding-bottom: 10vh;
+   }
   }
+
   .header h3 {
     font-size: 3em;
-    font-weight: 400;
-    margin-bottom: 20px;
+    font-weight: 500;
+    color: var(--gray)
   }
+
+  .bigH{
+    margin: 0;
+    font-size : clamp(40px, 8vw, 80px);
+  }
+  
   .btn {
     display: inline-block;
     border: 2px solid var(--primary);
@@ -35,6 +45,10 @@
 .meow{
   z-index: -1;
   position: absolute;
-  left:2px;
-  top:0.5px;
+  top:  10px;
+}
+
+p{
+  color:var(--light-gray);
+  font-size: 1.5em;
 }
