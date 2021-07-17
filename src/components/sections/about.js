@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import * as style from '../../styles/about.module.css';
-
+import { StaticImage } from 'gatsby-plugin-image';
 export default function AboutMe() {
     return (
         <section>
@@ -24,12 +24,16 @@ export default function AboutMe() {
                             communicating within and to teams about requirements. 
                         </p>                      
                     </motion.div>
-                    <div>
-                        <div className = "wrapper">
-                            
-                        </div>
+                </div>     
+                <div className={style.imgStyle}>
+                    <div className={style.wrapper}>
+                        <StaticImage 
+                        src = "src/img/me.jpg"
+                        width = {500}
+                        height = {500}
+                        />
                     </div>
-                </div>                
+                </div>           
             </div>
         </section>
     )

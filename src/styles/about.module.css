@@ -7,3 +7,16 @@
     font-weight: 500;
     margin-right: 1em;
 }
+
+.imgStyle{
+    position: relative;
+    max-width: 300px;
+    flex-direction: column;
+}
+
+.wrapper{
+    display: block;
+    width: 100%;
+    border-radius: 0.5px;
+    background-color: var(--primary-light);
+}
