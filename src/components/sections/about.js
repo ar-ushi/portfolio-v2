@@ -2,12 +2,13 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import * as style from '../../styles/about.module.css';
 import { StaticImage } from 'gatsby-plugin-image';
+
 export default function AboutMe() {
     return (
         <section>
             <h2 className="heading">About Me</h2>
-            <div className="d-flx">
-                <div className="flx-d-col">
+            <div className={style.aboutSection}>
+                <div className={style.itemBody}>
                     <motion.div className={style.aboutDescription}
                         initial={{boxShadow: "1px 1px 5px 0.5px rgba(114, 114, 114, 0.5)",}}
                         whileHover={{boxShadow: "-1px -1px 5px 0.5px rgba(114, 114, 114, 0.5)",}}
@@ -25,14 +26,12 @@ export default function AboutMe() {
                         </p>                      
                     </motion.div>
                 </div>     
-                <div className={style.imgStyle}>
-                    <div className={style.wrapper}>
+                <div className={style.itemImg}>
                         <StaticImage
+                        className = {style.img}
                         src = "../../img/me.jpg"
-                        width = {1000}
                         quality = {100}
                         />
-                    </div>
                 </div>           
             </div>
         </section>

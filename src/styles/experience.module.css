@@ -1,0 +1,33 @@
+.card{
+    width: 95%;
+    position: relative;
+    max-width: 500px;
+    margin: auto;
+    background: var(--white);
+    box-shadow: 1px 1px 5px 0.5px rgba(114, 114, 114, 0.5);
+    padding: 16px;
+    border-radius: 4px;
+    height: 400px;
+    transition: var(--transition-link);
+}
+@media screen and (max-width: 992px) {
+    .card{
+    max-width: 680px;
+        height: 400px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+      .card{
+    min-height: 500px;
+    height: auto;
+    margin: 180px auto;
+      }
+  }
+
+  @media screen and (max-height: 500px) and (min-width: 992px) {
+      .card{
+    height: 350px;
+      }
+}
+
+

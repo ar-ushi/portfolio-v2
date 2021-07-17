@@ -8,7 +8,15 @@ module.exports = {
   /* Your site config here */
   plugins: [
     `gatsby-plugin-image`,
-    `gatsby-plugin-sharp`
+    `gatsby-plugin-sharp`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `static-con`,
+        path: `${__dirname}/static-content`
+      }
+    },
+    `gatsby-transformer-remark`,
   ],
   siteMetadata:{
   }

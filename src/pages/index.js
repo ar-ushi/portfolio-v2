@@ -4,6 +4,7 @@ import * as style from '../styles/home.module.css';
 import {email} from '../config';
 import { Icon } from "../components/ui-components/icons";
 import AboutMe from "../components/sections/about";
+import Experience from "../components/sections/experience";
 
 export default function Home() {
   return (
@@ -26,6 +27,9 @@ export default function Home() {
           </div>
       </section>
       <AboutMe />
+      <div className ="margin-40-top">
+      <Experience />
+      </div>
       </main>
     </Layout>
   )
