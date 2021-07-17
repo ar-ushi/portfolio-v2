@@ -19,6 +19,21 @@ p {
   line-height: 1.5em;
 }
 
+a{
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  transition: var(--transition-link)
+}
+a:hover{
+  color: var(--primary);
+}
+a:focus{
+  color: var(--primary);
+}
+
 /* layout & nav */
 .layout {
   max-width: 1200px;
@@ -109,7 +124,26 @@ main {
   }
 
 
+  /* FLEX */
+  .d-flx{
+    display: flex;
+  }
+  .flx-d-col{
+    flex-direction: column;
+  }
+
 /* ma rgin-24 */
 .margin-24-bottom{
   margin-bottom: 24px;
+}
+
+/* COLORS */
+.primarycolor{
+  color: var(--primary);
+  display: inline;
+}
+
+/* FONTS */
+.defaultfont{
+  font-size: 0.75em;
 }

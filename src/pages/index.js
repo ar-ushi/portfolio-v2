@@ -16,7 +16,7 @@ export default function Home() {
             <h2 className = {style.bigH}>Arushi Aggarwal.</h2>
             <div>
             <h3>Software Engineer.</h3>
-            <p>I'm currently a 4th-year CS undergraduate based in Chandigarh, IN interested in web development, optimizing user experience and making tech more accessible to everyone.</p>
+            <p className={style.headingDescription}>I'm currently a 4th-year CS undergraduate based in Chandigarh, IN interested in web development, optimizing user experience and making tech more accessible to everyone.</p>
             </div>
             <div className= "margin-24-bottom">
             <a href={`mailto:${email}`} className={style.btn}>

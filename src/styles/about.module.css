@@ -1,0 +1,9 @@
+.aboutDescription{
+    color: var(--white);
+    text-align: justify;
+    padding: 8px;
+    border-radius: 0.5px;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-right: 1em;
+}
