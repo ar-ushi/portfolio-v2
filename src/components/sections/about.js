@@ -27,10 +27,10 @@ export default function AboutMe() {
                 </div>     
                 <div className={style.imgStyle}>
                     <div className={style.wrapper}>
-                        <StaticImage 
-                        src = "src/img/me.jpg"
-                        width = {500}
-                        height = {500}
+                        <StaticImage
+                        src = "../../img/me.jpg"
+                        width = {1000}
+                        quality = {100}
                         />
                     </div>
                 </div>           

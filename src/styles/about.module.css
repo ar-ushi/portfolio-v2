@@ -1,3 +1,6 @@
+.aboutSection{
+    max-width:900px;
+}
 .aboutDescription{
     color: var(--white);
     text-align: justify;
@@ -10,7 +13,6 @@
 
 .imgStyle{
     position: relative;
-    max-width: 300px;
     flex-direction: column;
 }
 
@@ -19,4 +21,11 @@
     width: 100%;
     border-radius: 0.5px;
     background-color: var(--primary-light);
+}
+.img{
+    width: 100%;
+    vertical-align: middle;
+    height: 100%;
+    position: relative;
+    transition: var(--transition-link);
 }
