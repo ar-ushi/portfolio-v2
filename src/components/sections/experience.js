@@ -39,7 +39,7 @@ const StyledInnerCard = styled.div`
       .range {
         margin-bottom: 25px;
         color: var(--primary);
-        font-size: 0.75rem;
+        font-size: 1rem;
       }
     
 `
@@ -87,8 +87,7 @@ export default function Experience() {
                         </a>
                       </span>
                     </h3>
-                    <h4 className="type">Type - {type}</h4>
-                    <p className="range">{range}</p>
+                    <p className="range">{type} | {range}</p>
 
                     <div dangerouslySetInnerHTML={{ __html: html }} />
                     </StyledInnerCard>
