@@ -90,7 +90,7 @@ main {
     display: flex;
     align-items: center;
     position: relative;
-    margin: 10px 0 40px;
+    margin: 10px 0 10px;
     width:100%;
     font-size: 2em;
     color: var(--primary-light);
@@ -158,6 +158,9 @@ main {
 }
 .margin-40-top{
   margin-top: 40px;
+}
+.margin-10-left{
+  margin-left: 10px;
 }
 
 /* COLORS */

@@ -89,7 +89,7 @@ export default function Experience() {
                     </h3>
                     <p className="range">{type} | {range}</p>
 
-                    <div dangerouslySetInnerHTML={{ __html: html }} />
+                    <div class="margin-10-left" dangerouslySetInnerHTML={{ __html: html }} />
                     </StyledInnerCard>
                     )
                 }) }

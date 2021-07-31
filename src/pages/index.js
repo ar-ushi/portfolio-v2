@@ -5,6 +5,7 @@ import {email} from '../config';
 import { Icon } from "../components/ui-components/icons";
 import AboutMe from "../components/sections/about";
 import Experience from "../components/sections/experience";
+import Positions from "../components/sections/positions";
 
 export default function Home() {
   return (
@@ -29,6 +30,7 @@ export default function Home() {
       <AboutMe />
       <div className ="margin-40-top">
       <Experience />
+      <Positions />
       </div>
       </main>
     </Layout>
