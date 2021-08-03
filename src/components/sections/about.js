@@ -30,6 +30,7 @@ export default function AboutMe() {
                         <StaticImage
                         className = {style.img}
                         src = "../../img/me.jpg"
+                        alt = "my-picture"
                         quality = {100}
                         />
                 </div>           

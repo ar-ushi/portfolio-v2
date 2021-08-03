@@ -13,7 +13,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `static-con`,
-        path: `${__dirname}/static-content`
+        path: `${__dirname}/static-content/`
       }
     },
     `gatsby-transformer-remark`,
