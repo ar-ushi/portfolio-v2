@@ -52,7 +52,7 @@ const StyledTabButton = styled.button`
   padding: 0 15px 2px;
   border-left: 1px solid var(--white);
   background-color: transparent;
-  font-size: 12px;
+  font-size: 1em;
   font-weight: 500;
   white-space: nowrap;
 
@@ -93,7 +93,7 @@ const StyledTabPanel = styled.div`
     padding: 0;
     margin: 0;
     list-style: square;
-    font-size: 1em;
+    font-size: 1rem;
   }
   li{
     position: relative;
@@ -209,7 +209,7 @@ export default function Positions() {
                           </span>
                         </h3>
         
-                        <div class="margin-10-left" dangerouslySetInnerHTML={{ __html: html }} />
+                        <div key = {i} className="margin-10-left" dangerouslySetInnerHTML={{ __html: html }} />
                       </StyledTabPanel>
                   );
                 })}

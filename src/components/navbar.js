@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from 'gatsby';
 
 
-export default function Navbar() {
+export default function Navbar({ isHome }) {
     return (
         <nav>
             <div className= "links">

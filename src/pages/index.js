@@ -6,31 +6,19 @@ import { Icon } from "../components/ui-components/icons";
 import AboutMe from "../components/sections/about";
 import Experience from "../components/sections/experience";
 import Positions from "../components/sections/positions";
+import Hero from "../components/sections/Hero";
+import Contact from "../components/sections/contact";
 
 export default function Home() {
   return (
     <Layout>
       <main>
-      <section className={style.header}>
-          <div>
-          <div  className={style.meow}><Icon name = "Dotted-Box"></Icon> </div>
-            <h4 className= {style.name}>Hey! I'm</h4>
-            <h2 className = {style.bigH}>Arushi Aggarwal.</h2>
-            <div>
-            <h3>Software Engineer.</h3>
-            <p className={style.headingDescription}>I'm currently a 4th-year CS undergraduate based in Chandigarh, IN interested in web development, optimizing user experience and making tech more accessible to everyone.</p>
-            </div>
-            <div className= "margin-24-bottom">
-            <a href={`mailto:${email}`} className={style.btn}>
-              Get in Touch
-            </a>
-            </div>
-          </div>
-      </section>
+      <Hero />
       <AboutMe />
       <div className ="margin-40-top">
       <Experience />
       <Positions />
+      <Contact />
       </div>
       </main>
     </Layout>

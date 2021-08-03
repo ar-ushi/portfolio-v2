@@ -2,6 +2,7 @@
 .header {
     padding-bottom: none;
     display: flex;
+    height: 100vh;
     position: relative;
     justify-content: center;
     flex-direction: column;
@@ -21,7 +22,7 @@
 
   .bigH{
     margin: 0;
-    font-size : clamp(40px, 8vw, 80px);
+    font-size : 6rem;
   }
   
   .btn {
