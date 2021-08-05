@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {IconGitHub, IconCodepen, IconLinkedin, IconDottedBox} from './index';
+import {IconGitHub, IconCodepen, IconLinkedin, IconDottedBox, Logo} from './index';
 
 export default function Icon({ name }){
 switch (name) {
@@ -12,6 +12,8 @@ switch (name) {
         return <IconLinkedin />;
     case 'Dotted-Box':
         return <IconDottedBox />
+    case 'Logo':
+        return <Logo />
     default: 
         return <IconCodepen />;
 }
