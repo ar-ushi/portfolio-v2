@@ -1,29 +1,53 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import styled from "styled-components"
 import NavbarLinks from "./navbar-links"
-import { Logo } from "./ui-components/icons"
+import { Logo, Logo, Logo } from "./ui-components/icons"
 
-const Navigation = styled.nav`
-  height: 10vh;
-  min-width: 75vw;
+const StyledHeader = styled.header`
+  position: fixed;
+  top: 0;
+  z-index: 11;
   display: flex;
-  background-color: var(--black);
-  position: relative;
   justify-content: space-between;
-  text-transform: uppercase;
-  margin: 0 auto;
-  padding: 0.5vh 2vw 0;
-  z-index: 2;
-  align-self: center;
-  @media (max-width: 768px) {
-    position: sticky;
-    height: 8vh;
-    top: 0;
-    left: 0;
-    right: 0;
-    left: 0;
+  align-items: center;
+  padding: 0px 50px;
+  width: 100%;
+  height: 100px;
+  background-color: var(--black)
+  filter: none !important;
+  pointer-events: auto !important;
+  user-select: auto !important;
+  backdrop-filter: blur(10px);
+  transition:all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+  @media (max-width: 1080px) {
+    padding: 0 40px;
   }
-`
+  @media (max-width: 768px) {
+    padding: 0 25px;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    ${props =>
+    props.scrollDirection === 'up' &&
+      !props.scrolledToTop &&
+      css`
+        height: 70px;
+        transform: translateY(0px);
+        background-color: var(--black);
+        box-shadow: 0 10px 30px -10px #111111;
+      `};
+
+    ${props =>
+    props.scrollDirection === 'down' &&
+      !props.scrolledToTop &&
+      css`
+        height: 70px;
+        transform: translateY(calc(70px * -1));
+        box-shadow: 0 10px 30px -10px #111111;
+      `};
+  }
+`;
 
 const Toggle = styled.div`
   display: none;
@@ -81,29 +105,55 @@ const Hamburger = styled.div`
     top: 10px;
   }
 `
-const Navbar = () => {
+const Navbar = ({atHome}) => {
+  const scrollDirection = useScrollDirection('down');
+  const [scrolledToTop, setScrolledToTop] = useState(true);
+
+  const handleScroll = () => {
+    setScrolledToTop(window.pageYOffset < 50);
+  };
+
+  useEffect(() => {  
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      clearTimeout(timeout);
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
+  const timeout = atHome ? loaderDelay : 0;
+  const fadeClass = atHome ? 'fade' : '';
+  const fadeDownClass = atHome ? 'fadedown' : '';
+
+
+  const Logo = (
+    <div className="logo" tabIndex="-1">
+      {atHome ? (
+        <a href="/" aria-label="Home">
+          <Logo />
+        </a>
+      ): (
+        <Link to="/" aria-label="home">
+          <Logo />
+        </Link>
+      )}
+    </div>
+  )
+
+  const Resume = (
+    <a className = "resume" href="/resume.pdf" target="_blank" rel="noopener noreferrer">
+      Resume
+    </a>
+  )
+
   const [navbarOpen, setNavbarOpen] = useState(false)
 
   return (
-    <Navigation>
-        <Logo />
-      <Toggle
-        navbarOpen={navbarOpen}
-        onClick={() => setNavbarOpen(!navbarOpen)}
-      >
-        {navbarOpen ? <Hamburger open /> : <Hamburger />}
-      </Toggle>
-      {navbarOpen ? (
-        <Navbox>
-            <NavbarLinks></NavbarLinks>
-        </Navbox>
-      ) : (
-        <Navbox open>
-            <NavbarLinks></NavbarLinks>
-        </Navbox>
-      )}
-    </Navigation>
+    <StyledHeader>
+
+    </StyledHeader>
   )
 }
 
-export default Navbar
+export default Navbar1

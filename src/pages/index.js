@@ -9,9 +9,9 @@ import Positions from "../components/sections/positions";
 import Hero from "../components/sections/Hero";
 import Contact from "../components/sections/contact";
 
-export default function Home() {
+export default function Home({location}) {
   return (
-    <Layout>
+    <Layout location={location}>
       <main>
       <Hero />
       <AboutMe />
