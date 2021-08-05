@@ -14,7 +14,7 @@ const ContactInfo = styled.div`
 `
 export default function Contact() {
     return (
-        <section>
+        <section id="contact">
             <h2 className = "heading">Get in Touch</h2>
             <div>
                 <p>If you're impressed by the portfolio so far and would like to get in touch with me, please drop me a { }

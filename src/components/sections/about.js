@@ -5,7 +5,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 
 export default function AboutMe() {
     return (
-        <section>
+        <section id="about">
             <h2 className="heading">About Me</h2>
             <div className={style.aboutSection}>
                 <div className={style.itemBody}>

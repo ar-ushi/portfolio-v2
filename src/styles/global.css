@@ -39,25 +39,7 @@ a:focus{
   max-width: 1200px;
   margin: 0 auto;
 }
-nav {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  margin: 40px auto;
-}
-nav .links {
-  display: inline-block;
-  text-align: right;
-}
-nav a {
-  display: inline-block;
-  margin-left: 20px;
-  font-weight: 400;
-  padding-bottom: 8px;
-  border-bottom: 3px solid transparent;
-}
-nav a:hover {
-  border-color: white;
-}
+
 footer p{
   text-align: center;
   color: #bbb;
@@ -93,7 +75,7 @@ main {
     margin: 10px 0 10px;
     width:100%;
     font-size: 2em;
-    color: var(--primary-light);
+    color: var(--primary);
     font-size: clamp(26px, 5vw, 36px);
     white-space: nowrap;
   }

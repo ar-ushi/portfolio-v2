@@ -158,9 +158,9 @@ export default function Positions() {
           setTabFocus(tabs.current.length - 1);
         }
       };
-      useEffect(() => focusTab(), [tabFocus]);
+      // useEffect(() => focusTab(), [tabFocus]);
       return (
-        <StyledJobsSection id="jobs" ref={revealContainer}>
+        <StyledJobsSection id="positions">
           <h2 className="heading">Positions & Achievements</h2>
     
           <div className="inner">
@@ -172,14 +172,14 @@ export default function Positions() {
                   return (
                     <StyledTabButton
                       key={i}
-                      isActive={activeTabId === i}
                       onClick={() => setActiveTabId(i)}
                       ref={el => (tabs.current[i] = el)}
                       id={`tab-${i}`}
                       role="tab"
                       tabIndex={activeTabId === i ? '0' : '-1'}
                       aria-selected={activeTabId === i ? true : false}
-                      aria-controls={`panel-${i}`}>
+                      aria-controls={`panel-${i}`}
+                      >
                       <span>{name}</span>
                     </StyledTabButton>
                   );

@@ -33,7 +33,7 @@ const Toggle = styled.div`
   @media (max-width: 768px) {
     display: flex;
   }
-`
+`   
 
 const Navbox = styled.div`
   display: flex;

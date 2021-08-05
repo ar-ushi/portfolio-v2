@@ -70,7 +70,7 @@ export default function Experience() {
     const expData = data.experience.edges;
     //creating a simple card for the time being 
     return (
-        <section>
+        <section id="jobs">
             <h2 className="heading">Experience</h2>
             <StyledCard>
                 {expData && expData.map(({ node },i) => {
