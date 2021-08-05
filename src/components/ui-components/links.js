@@ -10,11 +10,19 @@ flex-direction: column;
 margin: 0;
 padding: 0;
 list-style: none;  
-&:after {
+&:after  {
     content: '';
     display: block;
     width: 1px;
-    height: 90px;
+    height: 100px;
+    margin: 0 auto;
+    background-color: var(--primary);
+  }
+  &:before  {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 90vh;
     margin: 0 auto;
     background-color: var(--primary);
   }
@@ -27,9 +35,12 @@ list-style: none;
 
     a {
       padding: 10px;
+      color : var(--white);
 
       &:hover,
       &:focus {
+        color: var(--primary);
+        transition: var(--transition-link);
         transform: translateY(-3px);
       }
 
@@ -53,5 +64,7 @@ export default function Links() {
         ))}
         </StyledLinkList>
     </Side>
+
+
     )
 }

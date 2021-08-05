@@ -1,6 +1,6 @@
 module.exports = {
     email: 'aggarwalarushi5@gmail.com',
-    
+    portfolio: 'https://arushiaggarwal.netlify.app/',
     socialMediaLinks:[
         {
             name: 'Github',
@@ -15,4 +15,30 @@ module.exports = {
             url: 'https://codepen.io/ar-ushi',
         },
     ],
+    navLinks: [
+      {
+        name: 'About',
+        url: '/#about',
+      },
+      {
+        name: 'Experience',
+        url: '/#jobs',
+      },
+      {
+        name: 'Projects',
+        url: '/',
+      },
+      {
+          name: 'Achievement',
+          url: '/#positions',
+        },
+    
+      {
+        name: 'Contact',
+        url: '/#contact',
+      },
+    ]
+  
 }
+
+

@@ -23,7 +23,6 @@ a{
   display: inline-block;
   text-decoration: none;
   text-decoration-skip-ink: auto;
-  color: inherit;
   position: relative;
   transition: var(--transition-link)
 }
@@ -49,21 +48,11 @@ footer p{
 main {
   margin: 0 auto;
   min-height: 100vh;
-  padding: 0 50px;
+  padding: 0 75px;
 }
-@media (max-width: 1080px) {
-    main {
-    padding: 0 75px;
-    }
-}
-  @media (max-width: 768px) {
-    main{
-    padding: 0 50px;
-    }
-  }
   @media (max-width: 480px) {
     main{
-    padding: 0 25px;
+    padding: 0 50px;
     }
   }
 

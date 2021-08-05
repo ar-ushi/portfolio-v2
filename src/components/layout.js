@@ -1,12 +1,12 @@
-import React from 'react'
-import Navbar from './navbar'
+import React, {useEffect} from 'react'
 import '../styles/global.css'
+import styled from 'styled-components';
 import Links from "./ui-components/links";
+import Website from './ui-components/website';
 
 const StyledLayout = styled.div`
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
+    max-width: 1200px;
+    margin: 0 auto;  
 `
 
 export default function Layout({ children, location }) {
@@ -42,8 +42,8 @@ export default function Layout({ children, location }) {
         <>
         <div id="root">
             <StyledLayout>
-                <Navbar atHome={atHome} />
                 <Links />
+                <Website />
                 <div id="content">
                     {children}
                 </div>
