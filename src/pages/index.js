@@ -15,11 +15,10 @@ export default function Home({location}) {
       <main>
       <Hero />
       <AboutMe />
-      <div className ="margin-40-top">
+      <div className ="margin-40-top" />
       <Experience />
       <Positions />
       <Contact />
-      </div>
       </main>
     </Layout>
   )

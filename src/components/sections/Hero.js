@@ -18,6 +18,10 @@ export default function Hero() {
                 <a href={`mailto:${email}`} className={style.btn}>
                     Get in Touch
                 </a>
+                <a href= "./Resume.pdf" className={style.btn}  target="_blank" rel="noreferrer">
+                    Resume
+                </a>
+
             </div>
             <div className= {style.columnRight}>
                 <StaticImage />

@@ -47,7 +47,7 @@ footer p{
 
 main {
   margin: 0 auto;
-  min-height: 100vh;
+  min-height: 90vh;
   padding: 0 75px;
 }
   @media (max-width: 480px) {
