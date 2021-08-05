@@ -84,7 +84,12 @@ export default function AboutMe() {
     animate = "inactive"
     initial="inactive"
     >
-      <div className={style.itemBody}>
+      <motion.div
+        initial={{boxShadow: "1px 1px 5px 0.5px rgba(9, 120, 184, 0.877)",}}
+        whileHover={{boxShadow: "-1px -1px 5px 0.5px rgba(9, 120, 184, 0.877)",}}
+        whileTap={{boxShadow: "-1px -1px 5px 0.5px  rgba(9, 120, 184, 0.877)",}}   
+      >
+              <div className={style.itemBody}>
         <AnimatePresence exitBeforeEnter>
           <div key = "about">
             <motion.div
@@ -120,6 +125,8 @@ export default function AboutMe() {
         </div>
       </AnimatePresence>
     </div>
+      
+      </motion.div>
     </motion.div>
   </section>
     )
