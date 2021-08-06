@@ -1,6 +1,9 @@
 #Remove resume.
 static/Resume.pdf
 
+#ignore mds
+static-content/
+
 # Logs
 logs
 *.log
