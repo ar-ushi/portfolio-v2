@@ -1,5 +1,5 @@
 #Remove resume.
-src/static/Resume.pdf
+./static/Resume.pdf
 
 # Logs
 logs
