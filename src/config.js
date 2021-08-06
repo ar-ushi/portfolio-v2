@@ -14,6 +14,10 @@ module.exports = {
             name: 'Codepen',
             url: 'https://codepen.io/ar-ushi',
         },
+        {
+          name: 'Medium',
+          url: 'https://medium.com/simplify-programming'
+        }
     ],
     navLinks: [
       {

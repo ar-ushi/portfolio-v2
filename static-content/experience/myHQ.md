@@ -1,6 +1,6 @@
 ---
 date: '26-06-2021'
-title: 'FrontEnd App Developer'
+title: 'Software Engineer'
 type: 'Internship'
 company: 'myHQ'
 location: 'New Delhi, India'
@@ -15,8 +15,9 @@ url: 'https://play.google.com/store/apps/details?id=com.myhq.hqapp'
     display: inline;
 }
 </style>
-- <p class="bold-primary">Developed</p> and <p class="bold-primary">shipped </p> a highly critical module important to the user journey, Subscriptions and Payment Module, via a complete redesign of the UI and functionality using Ionic.
-- <p class="bold-primary">Built</p> and released the <p class="bold-primary">onboarding of a product on our app</p> and single-handedly developed flows for the same.
-- Contributed extensively to <p class="bold-primary">fixing underlying user experience issues</p>, making the application intuitive and user-friendly to the customer.
-- Played an instrumental role in <p class="bold-primary">redefining journeys</p> on the app via several critical changes to transform previously stateless flows to stateful ones.
-- <p class="bold-primary">Designed</p> Technical Specification Documents and System Design Documents, key to sound software development, throughout my tenure at myHQ.
+- Collaborated in a team of 3 developers to expand the myHQ app as part of <p class="bold-primary"> Frontend Development Team</p>.
+- <p class="bold-primary">Developed</p> and shipped a highly critical module important to the user journey, Subscriptions and Payment Module, via a <p class="bold-primary"> complete redesign of the UI and upadted working functionality using Ionic.</p>
+- Built and released the on boarding of a product and <p class="bold-primary"> single-handedly developed flows </p> for the same.
+- Reduced underlying <p class="bold-primary"> user experience </p> issues, making the application intuitive and user-friendly to the customer
+- Authored <p class="bold-primary"> Technical Specification Documents and System Design Documents </p>, key to sound software development, throughout my tenure at myHQ.
+

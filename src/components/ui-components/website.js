@@ -36,8 +36,7 @@ a {
   letter-spacing: 0.1em;
   writing-mode: vertical-rl;
 
-  &:hover,
-  &:focus {
+  &:hover{
     color: var(--primary);
     transition: all 200ms ease-in;
     transform: translateY(-3px);
