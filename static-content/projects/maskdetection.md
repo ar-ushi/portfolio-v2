@@ -1,7 +1,7 @@
 ---
 timeline : 'August 2020'
 title: 'Face Mask Detection'
-github: 'http://www.github.com/ar-ushi/portfolio-v2'
+github: 'https://github.com/ar-ushi/Face-Mask-Detection'
 external: ''
 tech: 
     - TensorFlow
