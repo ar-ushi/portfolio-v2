@@ -2,7 +2,6 @@
 import React from "react"
 import * as style from '../../styles/home.module.css';
 import {email} from '../../config';
-import { motion } from 'framer-motion';
 import { StaticImage } from "gatsby-plugin-image";
 
 export default function Hero() {

@@ -54,7 +54,6 @@ const StyledTabButton = styled.button`
   background-color: transparent;
   font-size: 1em;
   font-weight: 500;
-  white-space: nowrap;
 
   @media (max-width: 600px) {
     display: flex;

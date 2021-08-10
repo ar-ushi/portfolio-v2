@@ -1,10 +1,13 @@
 :root{
     --primary: #22c8f7;
     --primary-light: #0c9ec2;
+    --primary-med : #0978b8e0;
     --primary-opaque: #0e90a76e;
     --primary-bg: #0c97afa9;
+    --primary-card: #180202;
     --white: #ffffff;
     --black: #050000;
+    --light-black: #050000e7;
     --gray: #d4c1c1;
     --light-gray: #9e9d9d;
     --transition-link: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
