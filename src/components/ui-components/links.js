@@ -39,9 +39,11 @@ list-style: none;
 
       &:hover,
       &:focus {
-        color: var(--primary);
         transition: var(--transition-link);
         transform: translateY(-3px);
+        svg{
+          stroke: var(--primary);
+        }
       }
 
       svg {

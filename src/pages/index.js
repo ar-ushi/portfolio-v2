@@ -6,6 +6,7 @@ import Projects from "../components/sections/projects";
 import Positions from "../components/sections/positions";
 import Hero from "../components/sections/Hero";
 import Contact from "../components/sections/contact";
+import Footer from "../components/sections/footer";
 
 export default function Home({location}) {
   return (
@@ -18,6 +19,7 @@ export default function Home({location}) {
       <Positions />
       <Contact />
       </main>
+      <Footer />
     </Layout>
   )
 }

@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const StyledSideElement = styled.div`
+
   width: 40px;
   position: fixed;
   bottom: 0;
