@@ -2,7 +2,6 @@
 import React from "react"
 import * as style from '../../styles/home.module.css';
 import {email} from '../../config';
-import { StaticImage } from "gatsby-plugin-image";
 
 export default function Hero() {
     return (
@@ -21,9 +20,6 @@ export default function Hero() {
                     Resume
                 </a>
 
-            </div>
-            <div className= {style.columnRight}>
-                <StaticImage />
             </div>
         </section>
     )
