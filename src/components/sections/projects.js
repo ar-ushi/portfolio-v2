@@ -21,7 +21,7 @@ const StyledProject = styled.li`
        transition: width 0.4s;
        z-index: 2;  
        cursor: pointer;
-       background: linear-gradient(var(--black),var(--primary-bg));    
+       background: linear-gradient(var(--black),var(--primary-card));    
        overflow:hidden;
        text-align: center;
        margin: auto;
