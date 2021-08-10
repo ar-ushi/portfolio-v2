@@ -1,13 +1,15 @@
 ---
 timeline : 'September 2020 - November 2020'
 title: 'Server Health Monitoring'
-github: 'http://www.github.com/ar-ushi/portfolio-v2'
+github: 'https://github.com/ar-ushi/Server-Health-Monitor-v2'
 external: ''
 tech: 
-    - Gatsby.js
+    - React.js
     - CSS
     - JS
-    - Framer Motion
+    - Python
+    - TensorFlow
+    - Sklearn
 ---
 
 Coordinated in a team and facilitated the

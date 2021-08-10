@@ -4,12 +4,8 @@ title: 'Face Mask Detection'
 github: 'http://www.github.com/ar-ushi/portfolio-v2'
 external: ''
 tech: 
-    - Gatsby.js
-    - CSS
-    - JS
-    - Styled Components
-    - Framer Motion
+    - TensorFlow
+    - OpenCV
 ---
 
-Second iteration of my personal website, reflecting my professional experience and achievements, built with Gatsby.js.
-
+Engineered a deep-learning model using Tensor Flow and OpenCV that can detect presence of face mask on a real time video stream by implementing CNN.
