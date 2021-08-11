@@ -18,9 +18,22 @@
     height: auto;  
   }
   .thumbnailcontainer{
-    margin-left: 1rem;
-    margin-right: 3%;
     align-self: center;  
+  }
+  @media(max-width: 768px){
+    .thumbnailcontainer{
+      transform: translateX(-45px) translateY(0px) translateZ(0px) scale(1.25) !important;
+      margin-right: 14px;
+    }
+  }
+  @media(max-width: 426px){
+    .thumbnailcontainer{
+      display: none;
+    }
+    .aboutDescription{
+      text-align: start !important;
+      transform: none !important;
+    }
   }
   .flexBody{
     display: flex;
