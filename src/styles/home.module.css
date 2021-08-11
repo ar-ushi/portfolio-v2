@@ -1,8 +1,8 @@
-@import '../styles/variables.css';
 .header {
     padding-bottom: none;
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
+    margin-left: 10px;
     position: relative;
     justify-content: center;
     flex-direction: column;
@@ -15,16 +15,24 @@
   }
 
   .header h3 {
-    font-size: 3em;
     font-weight: 500;
     color: var(--primary-light);
+    margin: 0;
+    font-size : clamp(30px, 6vw, 60px);
   }
 
   .bigH{
     margin: 0;
-    font-size : 6rem;
+    font-size : clamp(40px, 6vw, 80px);
   }
-  
+  .btnwrapper{
+    display: flex;
+  }
+  @media(max-width: 320px){
+    .btnwrapper{
+      flex-direction: column;
+    }
+  }
   .btn {
     display: inline-block;
     border: 2px solid var(--primary);
@@ -32,16 +40,29 @@
     padding: 10px 16px;
     margin: 20px 10px 0;
     font-weight: 500;
+    display: flex; 
+    flex-direction: column;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
   }
   .btn:hover{
     background: var(--primary-opaque);
     box-shadow: var(--button-box-shadow);
   }
+
+  @media(max-width: 320px){
+    .btn{
+      display: flex; 
+      flex-direction: row;
+    }
+  }
   
   .name{
       display: inline-block;
+      font-weight: 400;
       color: var(--primary);
-      font-size: 2.5em;
+      font-size: clamp(20px, 5vw, 24px);
   }
 .meow{
   z-index: -1;
@@ -51,5 +72,6 @@
 
 .headingDescription{
   color:var(--light-gray);
-  font-size: 1.25em;
+  margin: 20px 0 0;
+  max-width: 100vw;
 }
