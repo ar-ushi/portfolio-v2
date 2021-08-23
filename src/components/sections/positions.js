@@ -3,7 +3,7 @@ import { useState } from "react";
 import { graphql, useStaticQuery } from 'gatsby';
 import styled from 'styled-components';
 
-const StyledJobsSection = styled.section`
+const StyledPositionSection = styled.section`
   max-width: 100%;
 
   .inner {
@@ -159,7 +159,7 @@ export default function Positions() {
       };
       // useEffect(() => focusTab(), [tabFocus]);
       return (
-        <StyledJobsSection id="positions">
+        <StyledPositionSection id="positions">
           <h2 className="heading">Positions & Achievements</h2>
     
           <div className="inner">
@@ -213,7 +213,7 @@ export default function Positions() {
                   );
                 })}
             </StyledTabPanels>
-        </StyledJobsSection>
+        </StyledPositionSection>
       );
     };
     

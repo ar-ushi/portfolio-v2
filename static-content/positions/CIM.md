@@ -1,7 +1,7 @@
 ---
 number: '3'
 title: 'Executive Board Member'
-name: 'Communication and Information Media Cell'
+name: 'CIM'
 ---
 
 - Authored Press Releases for major in-house events to be published by acclaimed newspapers and magazines.

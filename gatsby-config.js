@@ -21,7 +21,7 @@ module.exports = {
   siteMetadata:{
     title: 'Arushi Aggarwal',
     description: 
-    'Arushi Aggarwal is a computer science undergraduate set to take up entry-level roles in 2022, hoping to specialize in building exceptional digital experiences in a collaborative environment.',
+    'Arushi Aggarwal is a computer science undergraduate set to take up entry-level roles in 2022.',
     siteUrl: 'https://arushi-portfolio.netlify.app',
     image: 'src\img\me.jpg'
 
