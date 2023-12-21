@@ -1,5 +1,5 @@
 ---
-date: '26-06-2021'
+date: '2021-06-26'
 title: 'Software Engineer'
 type: 'Internship'
 company: 'myHQ'

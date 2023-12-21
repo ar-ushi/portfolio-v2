@@ -49,7 +49,7 @@ export default function Experience() {
     query{
         experience: allMarkdownRemark(
             filter: {fileAbsolutePath : {regex: "/experience/"}}
-            sort: {fields: [frontmatter___date], order: DESC}
+            sort: {frontmatter : {date: DESC}}
         ) {
             edges{
                 node {
@@ -62,11 +62,9 @@ export default function Experience() {
                         url
                     }
                     html
-                }
-            }
-        }
-    }
+                }}}}
     `);
+
     const expData = data.experience.edges;
     //creating a simple card for the time being 
     return (

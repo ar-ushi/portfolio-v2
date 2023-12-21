@@ -124,7 +124,7 @@ export default function Positions() {
     query{
         positions: allMarkdownRemark(
             filter: {fileAbsolutePath: {regex: "/positions/"}}
-            sort: {fields: [frontmatter___number]}
+            sort: {frontmatter : {number: ASC}}
         ){
             edges{
                 node{

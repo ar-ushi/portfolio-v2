@@ -90,7 +90,7 @@ export default function AboutMe() {
         whileTap={{boxShadow: "-1px -1px 5px 0.5px  rgba(9, 120, 184, 0.877)",}}   
       >
               <div className={style.itemBody}>
-        <AnimatePresence exitBeforeEnter>
+        <AnimatePresence mode="wait">
           <div key = "about">
             <motion.div
             className={style.flexBody}
