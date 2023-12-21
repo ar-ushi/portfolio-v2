@@ -146,7 +146,7 @@ export default function Positions() {
           return;
         }
         // If we're at the end, go to the start
-        if (tabFocus == null){
+        if (tabFocus === null){
           setTabFocus(0);
         }
         if (tabFocus >= tabs.current.length) {
@@ -200,8 +200,8 @@ export default function Positions() {
                         aria-hidden={activeTabId !== i}
                         hidden={activeTabId !== i}>
                         <h3>
-                          { title != 'N/A' && <span>{title} | </span>}
-                          {title == 'N/A' && <span></span>}
+                          { title !== 'N/A' && <span>{title} | </span>}
+                          {title === 'N/A' && <span></span>}
                           <span className="company">{name}
                             {/* <a href={url} className="inline-link">
                             </a> */}

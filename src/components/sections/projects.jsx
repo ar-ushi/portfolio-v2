@@ -12,7 +12,6 @@ const StyledProjectList= styled.ul`
 const StyledProject = styled.li`
     box-shadow: 0 8px 16px -8px var(--primary-med);
     border-radius: 6px;
-    height: 20vh;
     overflow: hidden;
     margin: 30px 0;
 
@@ -21,7 +20,7 @@ const StyledProject = styled.li`
        transition: width 0.4s;
        z-index: 2;  
        cursor: pointer;
-       background: linear-gradient(var(--black),var(--primary));    
+       background: var(--primary-dark);    
        overflow:hidden;
        text-align: center;
        margin: auto;
@@ -99,10 +98,10 @@ const StyledProject = styled.li`
    .project-description{
        position: relative; 
        z-index: 2;
-       padding: 25px;
+       margin: 1rem;
        border-radius: 2px;
        background-color: var(--light-black);
-       color: !important var(--primary-light);
+       color: var(--primary-light);
    }
 
    h5{
