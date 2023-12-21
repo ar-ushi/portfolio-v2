@@ -1,30 +1,17 @@
 import React from 'react';
-import styled from 'styled-components';
+import * as style from '../../styles/home.module.css';
 
-const StyledSideElement = styled.div`
 
-  width: 40px;
-  position: fixed;
-  bottom: 0;
-  left: ${props => (props.orientation === 'left' ? '40px' : 'auto')};
-  right: ${props => (props.orientation === 'left' ? 'auto' : '40px')};
-  z-index: 10;
-  color: var(--primary);
-
-  @media (max-width: 1080px) {
-    left: ${props => (props.orientation === 'left' ? '20px' : 'auto')};
-    right: ${props => (props.orientation === 'left' ? 'auto' : '20px')};
-  }
-
-  @media (max-width: 768px) {
-    display: none;
-  }
-`;
 
 export default function Side ({children, orientation}) {
+  //hide initial styles on load - styles are loaded before the rest of the content is available 
+  const sideStyles =
+  orientation === 'left'
+    ? { left: '40px', right: 'auto' }
+    : { left: 'auto', right: '40px' };
     return (
-       <StyledSideElement orientation = {orientation}>
+       <div orientation={orientation} style={sideStyles} className={style.sideelement}>
            {children}
-       </StyledSideElement> 
+       </div> 
     )
 }

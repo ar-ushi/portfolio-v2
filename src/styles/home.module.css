@@ -7,7 +7,7 @@
     justify-content: center;
     flex-direction: column;
   }
-  
+
   @media (max-width: 480px) and (min-height: 700px) {
    .header{
     padding-bottom: 10vh;
@@ -74,4 +74,16 @@
   color:var(--light-gray);
   margin: 20px 0 0;
   max-width: 100vw;
+}
+
+.sideelement {
+  width: 40px;
+  position: fixed;
+  bottom: 0;
+  left: 40px; /* or auto */
+  right: 40px; /* or 40px */
+  z-index: 10;
+  color: var(--primary);
+
+
 }
