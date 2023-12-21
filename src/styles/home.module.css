@@ -84,6 +84,63 @@
   right: 40px; /* or 40px */
   z-index: 10;
   color: var(--primary);
+  @media(max-width: 768px){
+    display: none;
+  }
+}
 
+.listlinks {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
+.listlinks:after {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 100px;
+  margin: 0 auto;
+  background-color: var(--primary);
+}
+
+.listlinks:before {
+  content: '';
+  display: block;
+  width: 1px;
+  height: 90vh;
+  margin: 0 auto;
+  background-color: var(--primary);
+}
+
+.listlinks li {
+  margin-bottom: 24px;
+}
+
+.listlinks li:last-of-type {
+  margin-bottom: 20px;
+}
+
+.listlinks a {
+  padding: 10px;
+  color: var(--light-gray);
+  writing-mode: vertical-rl;
+}
+
+.listlinks a svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--light-gray);
+}
+
+.listlinks a:hover,
+.listlinks a:focus,
+.listlinks a:hover svg,
+.listlinks a:focus svg {
+  stroke: var(--primary);
+  color: var(--primary);
+  transition: var(--transition-link);
+  transform: translateY(-3px);
 }
