@@ -1,6 +1,6 @@
 ---
 date: '2023-12-21'
-title: 'Digital Product Development Associate'
+title: 'Digital Product Management Associate'
 company: 'American Express'
 location: Gurugram, India'
 range: 'July 2022 - Present'
