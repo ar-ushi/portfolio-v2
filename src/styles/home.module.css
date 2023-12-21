@@ -6,8 +6,8 @@
     position: relative;
     justify-content: center;
     flex-direction: column;
-    align-items: flex-start;
   }
+  
   @media (max-width: 480px) and (min-height: 700px) {
    .header{
     padding-bottom: 10vh;
