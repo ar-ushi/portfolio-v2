@@ -67,7 +67,7 @@ export default function Footer() {
                 ))}
             </ul>
         </StyledLinks>
-        <div className="copyright">© 2021 CopyRight All Rights Reserved</div>
+        <div className="copyright">© 2023 CopyRight All Rights Reserved</div>
     </StyledFooter>
     )
 }

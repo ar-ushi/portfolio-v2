@@ -1,6 +1,5 @@
 import React from "react"
 import Layout from '../components/layout';
-import AboutMe from "../components/sections/about";
 import Experience from "../components/sections/experience";
 import Projects from "../components/sections/projects";
 import Positions from "../components/sections/positions";
@@ -13,7 +12,6 @@ export default function Home({location}) {
     <Layout location={location}>
       <main>
       <Hero />
-      <AboutMe />
       <Experience />
       <Projects />
       <Positions />

@@ -19,7 +19,7 @@ export default function Contact() {
             <h2 className = "heading">Get in Touch</h2>
             <ContactInfo>
                 <p>If you're impressed by the portfolio so far and would like to get in touch with me, please drop me a { }
-            <a href={`mailto:${email}`} className="primarycolor">mail</a>. I am currently looking for Job Oppurtunities for <p className="primarycolor"> Summer 2022.</p></p>
+            <a href={`mailto:${email}`} className="primarycolor">mail</a>. I am currently looking for Job Oppurtunities.</p>
 
             <a href={`mailto:${email}`} className={style.btn}>
                 Say Hello!
