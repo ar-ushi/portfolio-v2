@@ -1,5 +1,7 @@
 #Remove resume.
-#static/Resume.pdf
+static/
+
+static-content/
 
 # Logs
 logs
