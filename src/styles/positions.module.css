@@ -2,17 +2,8 @@ section{
     max-width: 100%
 }
 
-section .inner{
+.inner{
     display: flex;
-    @media (max-width: 600px){
-        display: block;
-    }
-
-    @media (min-width: 700px){
-        section .inner{
-            min-height: 50px;
-        }
-    }
 }
 
 .tablist{
@@ -23,41 +14,21 @@ section .inner{
   width: calc(100% + 50px);
 }
 
-.tablist li:last-of-type{
-    @media (max-width: 600px) {
-        padding-right: 50px;
-      }
-    
-      @media (max-width: 480px) {
-        padding-right: 25px;
-      }
-}
-
 button{
-    display: flex;
-  border-top: none;
-  border-bottom: none;
-  border-right: none;
+ display: flex;
+  border: none;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: var(--tab-height);
   padding: 0 15px 2px;
-  border-left: 1px solid var(--white);
   background-color: transparent;
   font-size: 1em;
   font-weight: 500;
-  
-  @media (max-width: 600px){
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 120px;
-    padding: 0 15px;
-    border-left: 0;
-    border-bottom: 2px solid var(--primary-opaque);
-    text-align: center;
-  }
+}
+
+button:not(:first-of-type){
+    border-left: 1px solid var(--white);
 }
 
 button:hover, button:focus{
@@ -66,17 +37,14 @@ button:hover, button:focus{
 
 .tabpanels{
     position: relative;
-  width: 100%;
-  margin-left: 20px;
-  @media (max-width: 600px) {
-    margin-left: 0;
-  }
+    width: 100%;
+    margin-left: 20px;
 }
 
 .tabpanel{
     width: 100%;
-  height: auto;
-  padding: 10px 5px;
+    height: auto;
+    padding: 10px 5px;
 }
 
 .tapanel ul{
@@ -100,4 +68,36 @@ button:hover, button:focus{
 
 .tapanel h3 .company{
     color: var(--primary);
+}
+
+@media (max-width: 600px){
+    .inner{
+        display: block;
+    }
+    .tablist li:last-of-type{
+        padding-right: 50px;
+    }
+    button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 120px;
+        padding: 0 15px;
+        border-left: 0;
+        border-bottom: 2px solid var(--primary-opaque);
+        text-align: center;
+    }
+    .tabpanels{
+        margin-left: 0;
+    }
+}
+@media (min-width: 700px){
+        .inner{
+        min-height: 50px;
+    }
+}    
+@media (max-width: 480px) {
+    .tablist li:last-of-type{
+        padding-right: 25px;
+    }
 }
