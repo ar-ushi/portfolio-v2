@@ -1,15 +1,49 @@
 .card{
-    width: 95%;
-    position: relative;
-    max-width: 500px;
-    margin: auto;
-    background: var(--white);
-    box-shadow: 1px 1px 5px 0.5px rgba(114, 114, 114, 0.5);
-    padding: 16px;
-    border-radius: 4px;
-    height: 400px;
-    transition: var(--transition-link);
+  position: relative;
+  width: 100%;
 }
+
+.innercard {
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+}
+
+.innercard ul {
+  padding: 0;
+  margin: 0;
+  list-style: square;
+  font-size: 1em;
+}
+
+.innercard ul li {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.innercard h3 {
+  margin-bottom: 2px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.innercard .companylink {
+  color: var(--primary-light);
+}
+
+.innercard .type {
+  margin-bottom: 12px;
+  font-size: 0.75rem;
+}
+
+.innercard .range {
+  margin-bottom: 25px;
+  color: var(--primary);
+  font-size: 1rem;
+}
+
+
 @media screen and (max-width: 992px) {
     .card{
     max-width: 680px;
@@ -20,7 +54,12 @@
       .card{
     min-height: 500px;
     height: auto;
-    margin: 180px auto;
+      }
+      .innercard{
+        font-size: 1rem;
+      }
+      .innercard li{
+        font-size: 15px;
       }
   }
 

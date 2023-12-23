@@ -1,4 +1,3 @@
-
 import React from "react"
 import * as style from '../../styles/home.module.css';
 import {email} from '../../config';

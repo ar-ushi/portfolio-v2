@@ -1,8 +1,6 @@
 .header {
-    padding-bottom: none;
     display: flex;
     min-height: 100vh;
-    margin-left: 10px;
     position: relative;
     justify-content: center;
     flex-direction: column;
@@ -14,17 +12,10 @@
    }
   }
 
-  .header h3 {
-    font-weight: 500;
-    color: var(--primary-light);
-    margin: 0;
-    font-size : clamp(30px, 6vw, 60px);
-  }
-
   .bigH{
-    margin: 0;
     font-size : clamp(40px, 6vw, 80px);
   }
+
   .btnwrapper{
     display: flex;
   }
@@ -34,17 +25,12 @@
     }
   }
   .btn {
-    display: inline-block;
     border: 2px solid var(--primary);
     color: var(--primary);
     padding: 10px 16px;
     margin: 20px 10px 0;
     font-weight: 500;
-    display: flex; 
-    flex-direction: column;
     white-space: nowrap;
-    align-items: center;
-    justify-content: center;
   }
   .btn:hover{
     background: var(--primary-opaque);
@@ -59,7 +45,6 @@
   }
   
   .name{
-      display: inline-block;
       font-weight: 400;
       color: var(--primary);
       font-size: clamp(20px, 5vw, 24px);

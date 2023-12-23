@@ -40,7 +40,6 @@ const StyledProject = styled.li`
 
    .project-tech-list {
     display: flex;
-    left: 20px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
@@ -50,19 +49,13 @@ const StyledProject = styled.li`
     padding: 0;
     list-style: none;
 
-    li {
-      margin: 0 20px 5px 0;
-      color: var(--gray);
-      font-size: 14px;
-      white-space: nowrap;
-    }
-
     @media (max-width: 768px) {
       margin: 10px 0;
+    }
 
-      li {
-        margin: 0 10px 5px 0;
-      }
+    span{
+        margin-right: 5px;
+        color: var(--primary-dark);
     }
   }
   .project-links {
@@ -117,9 +110,8 @@ const Projects = () => {
     const data = useStaticQuery(graphql`
     query{
         projects: allMarkdownRemark(
-            filter: {
-                fileAbsolutePath : {regex: "/projects/"}
-            }
+            filter: {fileAbsolutePath : {regex: "/projects/"}}
+                sort: {frontmatter : {date: DESC}}
         ) {
             edges {
                 node {
@@ -152,11 +144,11 @@ const Projects = () => {
                                 <div>
                                 <h5>{timeline}</h5>
                                 {tech.length && (
-                                <ul className="project-tech-list">
-                                    {tech.map((tech, i) => (
-                                    <li key={i}>{tech}</li>
+                                <div className="project-tech-list">
+                                    {tech.map((stack, i) => (
+                                    <span key={i}>{stack}</span>
                                     ))}
-                                </ul>
+                                </div>
                                 )}
                             <div className="project-links">
                                 {github && (
@@ -170,7 +162,6 @@ const Projects = () => {
                                     </a>
                                 )}
                                 </div>
-
                                 </div>
                             </div>
                             <div

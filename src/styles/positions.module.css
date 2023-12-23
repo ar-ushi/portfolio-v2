@@ -1,0 +1,103 @@
+section{
+    max-width: 100%
+}
+
+section .inner{
+    display: flex;
+    @media (max-width: 600px){
+        display: block;
+    }
+
+    @media (min-width: 700px){
+        section .inner{
+            min-height: 50px;
+        }
+    }
+}
+
+.tablist{
+    position: relative;
+  z-index: 3;
+  list-style: none;
+  display: inherit;
+  width: calc(100% + 50px);
+}
+
+.tablist li:last-of-type{
+    @media (max-width: 600px) {
+        padding-right: 50px;
+      }
+    
+      @media (max-width: 480px) {
+        padding-right: 25px;
+      }
+}
+
+button{
+    display: flex;
+  border-top: none;
+  border-bottom: none;
+  border-right: none;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: var(--tab-height);
+  padding: 0 15px 2px;
+  border-left: 1px solid var(--white);
+  background-color: transparent;
+  font-size: 1em;
+  font-weight: 500;
+  
+  @media (max-width: 600px){
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 120px;
+    padding: 0 15px;
+    border-left: 0;
+    border-bottom: 2px solid var(--primary-opaque);
+    text-align: center;
+  }
+}
+
+button:hover, button:focus{
+    background-color: var(--primary-bg);
+}
+
+.tabpanels{
+    position: relative;
+  width: 100%;
+  margin-left: 20px;
+  @media (max-width: 600px) {
+    margin-left: 0;
+  }
+}
+
+.tabpanel{
+    width: 100%;
+  height: auto;
+  padding: 10px 5px;
+}
+
+.tapanel ul{
+    padding: 0;
+    margin: 0;
+    list-style: square;
+    font-size: 1rem;
+}
+
+.tabpanel li{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.tabpanel h3{
+    margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  line-height: 1.3;
+}
+
+.tapanel h3 .company{
+    color: var(--primary);
+}
