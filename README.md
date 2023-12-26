@@ -10,4 +10,4 @@
 </p>
 
 
-<h2> This Project was created in 2021. Since then, we've had gatsbyv5 rollout - this project is currently being updated to reflect some of the performance improvements in the recent versions of gatsby </h2>
+<h2> This Project was created in 2021. Since then, we've had gatsbyv5 rollout - this project is currently being updated to reflect some of the improvements in the recent versions of gatsby </h2>
