@@ -8,16 +8,17 @@ module.exports = {
         },
         {
             name: 'Linkedin',
-            url: 'https://www.linkedin.com/in/arushi-aggarwal-20478316a/',
+            url: 'https://www.linkedin.com/in/arushi-aggarwal-2001/',
         },
-        {
-            name: 'Codepen',
-            url: 'https://codepen.io/ar-ushi',
-        },
-        {
-          name: 'Medium',
-          url: 'https://medium.com/simplify-programming'
-        }
+      
+        // {
+        //     name: 'Codepen',
+        //     url: 'https://codepen.io/ar-ushi',
+        // },
+        // {
+        //   name: 'Medium',
+        //   url: 'https://medium.com/simplify-programming'
+        // }
     ],
     navLinks: [
       {

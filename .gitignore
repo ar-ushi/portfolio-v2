@@ -1,7 +1,4 @@
 #Remove resume.
-static/
-
-static-content/
 
 # Logs
 logs
