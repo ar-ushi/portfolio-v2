@@ -1,7 +1,6 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from 'styled-components';
-import { Icon } from '../ui-components/icons';
 
 
 const StyledProjectList= styled.ul`
@@ -153,13 +152,12 @@ const Projects = () => {
                             <div className="project-links">
                                 {github && (
                                     <a href={github} aria-label="GitHub Link">
-                                    <Icon name="Github" />
+                <i className='fa-brands fa-github' aria-hidden="true" />
                                     </a>
                                 )}
                                 {external && (
                                     <a href={external} aria-label="External Link" className="external">
-                                    <Icon name="External" />
-                                    </a>
+<i className="fa-solid fa-square-arrow-up-right"></i>                               </a>
                                 )}
                                 </div>
                                 </div>

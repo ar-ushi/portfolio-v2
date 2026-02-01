@@ -1,0 +1,70 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 4rem 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.header h1 {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: #666;
+  font-size: 1.1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+.card {
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #eee;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 0.85rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+.categories {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.chip {
+  background: #0c0c0c;
+  border-color: white;
+  padding: 0.2rem 0.6rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  color: #ffffff;
+}
+
+.title {
+  color: var(--primary);
+  text-decoration: none;
+}
+
+.title:hover {
+  text-decoration: underline;
+}
+
+.excerpt {
+  margin-top: 0.75rem;
+  font-weight: 400;
+  color: #858383;
+  line-height: 1.5;
+}

@@ -1,29 +1,35 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.com/docs/gatsby-config/
- */
 
 module.exports = {
-  /* Your site config here */
+  siteMetadata: {
+    title: 'Arushi Aggarwal',
+    description: 
+    'Hi! This is my personal website :)',
+    siteUrl: 'https://arushi-portfolio.netlify.app',
+    image: 'src\img\me.jpg'
+  },
   plugins: [
     `gatsby-plugin-image`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-remark`,
+
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `static-con`,
-        path: `${__dirname}/static-content/`
-      }
+        path: `${__dirname}/static-content/`,
+      },
     },
-    `gatsby-transformer-remark`,
-  ],
-  siteMetadata:{
-    title: 'Arushi Aggarwal',
-    description: 
-    'Arushi Aggarwal is a computer science undergraduate set to take up entry-level roles in 2022.',
-    siteUrl: 'https://arushi-portfolio.netlify.app',
-    image: 'src\img\me.jpg'
 
-  }
-}
+
+    {
+      resolve: "gatsby-source-sanity",
+      options: {
+        projectId: "8zirrklc", 
+        dataset: "production",
+        apiVersion: "2023-01-01",
+        useCdn: true,
+      },
+    },
+  ],
+};
+
