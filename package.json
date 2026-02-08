@@ -13,6 +13,7 @@
   },
   "dependencies": {
     "@portabletext/react": "^6.0.2",
+    "@sanity/image-url": "^2.0.3",
     "classnames": "^2.3.2",
     "framer-motion": "^10.16.16",
     "gatsby": "^5.13.0",
@@ -24,6 +25,7 @@
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-syntax-highlighter": "^16.1.0",
     "styled-components": "^6.1.2"
   },
   "repository": {
@@ -32,5 +34,8 @@
   },
   "bugs": {
     "url": "https://github.com/gatsbyjs/gatsby/issues"
+  },
+  "devDependencies": {
+    "@types/react-syntax-highlighter": "^15.5.13"
   }
 }

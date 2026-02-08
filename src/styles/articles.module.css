@@ -45,12 +45,12 @@
 }
 
 .chip {
-  background: #0c0c0c;
-  border-color: white;
+  border: 1px solid;
+  border-color: var(--primary);
   padding: 0.2rem 0.6rem;
   border-radius: 50px;
   font-size: 0.75rem;
-  color: #ffffff;
+  color: var(--primary);
 }
 
 .title {
@@ -68,3 +68,15 @@
   color: #858383;
   line-height: 1.5;
 }
+
+ ul {
+  list-style: disc;
+  padding-left: 1.5rem;
+  margin: 1rem 0;
+}
+
+li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
